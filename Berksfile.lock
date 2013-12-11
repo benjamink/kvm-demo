@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "apt": {
+      "locked_version": "2.3.0"
+    },
+    "kvm-demo": {
+      "locked_version": "0.1.0",
+      "git": "git@github.com:benjamink/kvm-demo.git",
+      "ref": "c777859e07531768cab008b71088206434f7b4ed"
+    }
+  }
+}
