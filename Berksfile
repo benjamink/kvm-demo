@@ -1,3 +1,3 @@
 site :opscode
 
-cookbook 'apt', '~> 2.3.0'
+metadata
