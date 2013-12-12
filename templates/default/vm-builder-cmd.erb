@@ -1,0 +1,22 @@
+#!/bin/bash
+
+sudo ubuntu-vm-builder \
+  kvm \
+  precise \
+  --destdir /mnt/$1 \
+  --arch 'amd64' \
+  --mem '1024' \
+  --rootsize '10240' \
+  --swapsize '1024' \
+  --kernel-flavour 'server' \
+  --hostname "$1" \
+  --domain 'local.vm' \
+  --mirror 'http://archive.ubuntu.com/ubuntu' \
+  --components 'main,universe' \
+  --addpkg 'vim' \
+  --addpkg 'ufw' \
+  --addpkg 'git-core' \
+  --name 'Joe Ubuntu' \
+  --user 'ubuntu' \
+  --pass 'ubuntu' \
+  --libvirt qemu:///system
